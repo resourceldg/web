@@ -1,6 +1,6 @@
 <script>
     import { goto, stores } from '@sapper/app';
-    import { post } from 'utils.js';
+    import { post } from './utils.js';
     import { onMount } from 'svelte';
     const { session } = stores();
 
