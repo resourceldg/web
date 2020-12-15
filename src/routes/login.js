@@ -11,7 +11,7 @@ export async function post(req, res) {
     try {
         const { email, password } = req.body;
 
-        const result = await fetch(`http://localhost:1337/auth/local`, {
+        const result = await fetch(`https://walatic:1337/auth/local`, {
             method: 'POST',
             headers,
             body: JSON.stringify({ identifier: email, password: password }),
