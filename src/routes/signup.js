@@ -11,7 +11,7 @@ const headers = {
     try {
         const { username, email, password} = req.body;
 
-        const result = await fetch(`http://localhost:1337/auth/local/register`, {
+        const result = await fetch(`https://walatic.com:1337/auth/local/register`, {
             method: 'POST',
             headers,
             body: JSON.stringify({ username, email, password }),
