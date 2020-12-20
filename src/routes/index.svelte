@@ -31,12 +31,23 @@
 		}
 	}
 </style>
-
+<script>
+import "tailwindcss/tailwind.css"
+</script>
 <svelte:head>
 	<title>a minimal sapper blog</title>
 </svelte:head>
 <p>welcome to</p>
 <h1>the<b>blog.</b></h1>
+<div class="p-6 max-w-sm mx-auto bg-blue-300 rounded-xl shadow-md flex items-center space-x-4">
+	<div class="flex-shrink-0">
+	  <img class="h-12 w-12" src="/img/logo.svg" alt="ChitChat Logo">
+	</div>
+	<div>
+	  <div class="text-xl font-medium text-black">ChitChat</div>
+	  <p class="text-gray-500">You have a new message!</p>
+	</div>
+  </div>
 
 <figure>
 	<img alt='the birds on a line' src='bird-bg.png'>
